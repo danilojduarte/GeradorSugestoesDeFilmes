@@ -19,6 +19,7 @@ body {
 
 button {
     font-family: "Outfit", sans-serif;
+    border: none;
 }
 
 .card {
@@ -135,4 +136,27 @@ header button {
 
 .duration, .year {
     gap: 4px;
+    color: var(--cores-cinza-light, #8b8098);
+    font-family: Outfit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.movie button {
+    display: flex;
+    width: 194px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--cores-cinza, #2b2b37);
+
+    color: var(--cores-branco, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
 }
