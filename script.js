@@ -414,3 +414,70 @@ const data = {
     "total_pages": 39562,
     "total_results": 791228
   }
+
+
+// Accessar inf extras do filme
+  //   https://api.themoviedb.org/3/movie/{movie_id}
+
+// Quando clicar no botão de assistri trailer
+// https://api.themoviedb.org/3/movie/{movie_id}/videos
+
+
+  function watch(e){
+  }
+
+  function createMovieLayout({
+    id,
+    title,
+    stars,
+    image,
+    time,
+    year
+  }) {
+    return `
+    <div class="movie">
+                    <div class="title">
+                        <span>${title}</span>
+                        <div>
+                            <img src="assets/icons/Star.svg" alt="">
+                            <p>${stars}</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="https://image.tmdb.org/t/p/w500${image}" alt="Imagem  de ${title}">
+                    </div>
+                    <div class="info">
+                        <div class="duration">
+                            <img src="assets/icons/Clock.svg" alt="">
+                            <span>${time}</span>
+                        </div>
+                        <div class="year">
+                            <img src="assets/icons/CalendarBlank.svg" alt="">
+                            <span>${year}</span>
+                        </div>
+                    </div>
+
+                    <button onclick="watch(e)" data-id="${id}">
+                        <img src="assets/icons/Play.svg" alt="">
+                        <span>Assistir Trailer</span>
+                    </button>
+                </div>
+    `
+  }
+
+  function select3Videos(results) {
+    const selectOne = Math.floor(Math.random() * results.lenght)
+
+    let selectedVideos = new Set()
+    while(selectedVideos.size <= 3) {
+        selectedVideos.add(results[random()].id)
+    }
+
+    return select3Videos
+  }
+
+  function start() {
+    const results = data.results
+
+    const best3 = select3Videos()
+  }
