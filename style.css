@@ -85,6 +85,7 @@ header button {
 .movie {
     display: flex;
     flex-direction: column;
+    max-width: 194px;
     gap: 8px;
 }
 
@@ -129,4 +130,9 @@ header button {
 .poster>img {
     width: 194px;
     height: 289px;
+}
+
+
+.duration, .year {
+    gap: 4px;
 }
