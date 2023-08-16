@@ -488,14 +488,14 @@ function createMovieLayout({
 }
 
 function select3Videos(results) {
-    const selectOne = Math.floor(Math.random() * results.lenght)
+    const random = ()=> Math.floor(Math.random() * results.lenght)
 
     let selectedVideos = new Set()
-    while (selectedVideos.size <= 3) {
+    while (selectedVideos.size < 3) {
         selectedVideos.add(results[random()].id)
     }
 
-    return [...select3Videos]
+    return [...selectedVideos]
 }
 
 async function start() {
@@ -503,5 +503,19 @@ async function start() {
 
     const best3 = select3Videos(results)
 
+    best3.forEach(async movie => {
+        const info = await getMoreInfo(movie)
+        const props = {
+            id: info.id,
+            title: info.title,
+            stars: Number(info.vote_avarage).toFidex(1),
+            image: info.poster_path,
+            time: minutesToHourMinutesAndSeconds(info.runtime)
+        }
+    })
+
     const info = await getMoreInfo(best3[0])
+
 }
+
+start()
