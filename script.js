@@ -415,6 +415,10 @@ const data = {
     "total_results": 791228
   }
 
+  async function getMoreInfo(id) {
+
+  }
+
 
 // Accessar inf extras do filme
   //   https://api.themoviedb.org/3/movie/{movie_id}
