@@ -4,7 +4,7 @@ async function getMovies() {
       method: 'GET',
       headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNTNjMWY3MDUzNzRlMzFjN2Y0YzQwNmQ4MDBkNTE5YiIsInN1YiI6IjY0YzY4ZmU4ZWVjNWI1MDBmZjUyNGYwMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.H2gzkxXiU0-Fb2wKqMHzqmsVcK8zfGsh2hXKqJK4xFg'
+        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzNWZiNjk5M2JmZjc2ZGEzNmE3ZDIyNWE5MzhhNGJiMiIsInN1YiI6IjY0NmJhMzA0N2I3YjRkMDE1NWY5ODZlOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8dY-he2IJ43RwsZWoOB1abEg93wlsk4ynUjIdWsz7i0'
       }
     };
   
@@ -24,7 +24,7 @@ async function getMovies() {
       method: 'GET',
       headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNTNjMWY3MDUzNzRlMzFjN2Y0YzQwNmQ4MDBkNTE5YiIsInN1YiI6IjY0YzY4ZmU4ZWVjNWI1MDBmZjUyNGYwMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.H2gzkxXiU0-Fb2wKqMHzqmsVcK8zfGsh2hXKqJK4xFg'
+        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzNWZiNjk5M2JmZjc2ZGEzNmE3ZDIyNWE5MzhhNGJiMiIsInN1YiI6IjY0NmJhMzA0N2I3YjRkMDE1NWY5ODZlOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8dY-he2IJ43RwsZWoOB1abEg93wlsk4ynUjIdWsz7i0'
       }
     };
   
@@ -156,5 +156,5 @@ async function getMovies() {
     // substituir o conteúdo dos movies lá no html
     document.querySelector('.movies').innerHTML = output.join("")
   }
-  
+
   start()
